@@ -1,0 +1,244 @@
+echo "<br>";
+
+	$data = [
+				array(
+						'title' => 'The Promise', 
+						'is_part' => 1,
+						'part' => [	
+									array(
+											'judul' => 'Part 1',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/001/'
+										),
+									array(
+											'judul' => 'Part 2',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/002/'
+										),
+									array(
+											'judul' => 'Part 3',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/003/'
+										),
+								] 
+					),
+				array(
+						'title' => 'The Search', 
+						'is_part' => 1,
+						'part' => [	
+									array(
+											'judul' => 'Part 1',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/004/'
+										),
+									array(
+											'judul' => 'Part 2',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/005/'
+										),
+									array(
+											'judul' => 'Part 3',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/006/'
+										),
+								] 
+					),
+				array(
+						'title' => 'The Rift', 
+						'is_part' => 1,
+						'part' => [	
+									array(
+											'judul' => 'Part 1',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/007/'
+										),
+									array(
+											'judul' => 'Part 2',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/008/'
+										),
+									array(
+											'judul' => 'Part 3',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/009/'
+										),
+								] 
+					),
+				array(
+						'title' => 'Smoke and Shadow', 
+						'is_part' => 1,
+						'part' => [	
+									array(
+											'judul' => 'Part 1',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/010/'
+										),
+									array(
+											'judul' => 'Part 2',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/011/'
+										),
+									array(
+											'judul' => 'Part 3',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/012/'
+										),
+								] 
+					),
+				array(
+						'title' => 'North and South', 
+						'is_part' => 1,
+						'part' => [	
+									array(
+											'judul' => 'Part 1',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/013/'
+										),
+									array(
+											'judul' => 'Part 2',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/014/'
+										),
+									array(
+											'judul' => 'Part 3',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/015/'
+										),
+								] 
+					),
+				array(
+						'title' => 'Imbalance', 
+						'is_part' => 1,
+						'part' => [	
+									array(
+											'judul' => 'Part 1',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/024/'
+										),
+									array(
+											'judul' => 'Part 2',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/025/'
+										),
+									array(
+											'judul' => 'Part 3',
+											'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/026/'
+										),
+								] 
+					),
+	];
+
+	$htmla = '<select name="chapter"><option value="003.01">003.01 - Avatar The Last Airbender - The Lost Adventures (2011)</option><option value="003.02">003.02 - Avatar The Last Airbender - Relics (2011)</option><option value="003.03">003.03 - Avatar The Last Airbender - The Art of the Animated Series (2010)</option><option value="006.01">006.01 - Avatar The Last Airbender - Rebound (2013)</option><option value="012.01">012.01 - Avatar The Last Airbender - All Ages (2015)</option><option value="016">016 - The Legend of Korra - The Art of the Animated Series Book 01 Air (2013)</option><option value="017">017 - The Legend of Korra - The Art of the Animated Series Book 02 Spirits (2014)</option><option value="018">018 - The Legend of Korra - The Art of the Animated Series Book 03 Change (2015)</option><option value="019">019 - The Legend of Korra - The Art of the Animated Series Book 04 Balance (2015)</option><option value="020">020 - The Legend of Korra - Turf Wars Part 1 (2017)</option><option value="021">021 - The Legend of Korra - Turf Wars Part 2 (2018)</option><option value="022">022 - The Legend of Korra - Turf Wars Part 3 (2018)</option><option value="023">023 - Legend of Korra (2018)</option><option value="027">027 - Avatar The Last Airbender Team Avatar Tales (2019)</option><option value="028.01">028.01 - Avatar Bee Aggressive!</option><option value="028.02">028.02 - Avatar Dont Blow It</option><option value="028.03">028.03 - Avatar Fruit Stand Freestyle</option><option value="028.04">028.04 - Avatar Game Time</option><option value="028.05">028.05 - Avatar Going Home Again</option><option value="028.06">028.06 - Avatar Gym Time</option><option value="028.07">028.07 - Avatar It\'s Only Natural</option><option value="028.08">028.08 - Avatar Lessons</option><option value="028.09">028.09 - Avatar New Recruits</option><option value="028.10">028.10 - Avatar Night Animals</option><option value="028.11">028.11 - Avatar Sleepbending</option><option value="028.12">028.12 - Avatar Sokka the Avatar</option><option value="028.13">028.13 - Avatar The Bridge</option><option value="028.14">028.14 - Avatar Water War</option><option value="029">029 - Katara and the Pirates Silver (2020)</option><option value="030">030 - Avatar The Last Airbender - Sisters (2015)</option><option value="031">031 - Avatar The Last Airbender Prequel - Zukos Story (2010)</option><option value="032">032 - Avatar The Last Airbender Shells (2014)</option><option value="032.01">032.01 - Avatar The Last Airbender Legacy</option><option value="033">033 - The Legend of Korra - Ruins of the Empire Part 01 (2019)</option><option value="034">034 - The Legend of Korra - Ruins of the Empire Part 02 (2019)</option><option value="035">035 - The Legend of Korra - Ruins of the Empire Part 03 (2020)</option><option value="036">036 - The Legend of Korra - Friends for Life (2016)</option><option value="037">037 - The Legend of Korra - Lost Pets (2018)</option><option value="038">038 - Callums Spellbook - The Dragon Prince (2020)</option><option value="039">039 - Avatar The Last Airbender The Rise of Kyoshi (2019)</option><option value="040">040 - Avatar The Last Airbender Legacy of The Fire Nation (2020)</option><option value="041">041 - Avatar The Last Airbender The Shadow of Kyoshi (2020)</option><option value="042">042 - Avatar The Last Airbender Katara and the Pirates Silver (2020)</option></select>';
+	$dom = new simple_html_dom(null, true, true, DEFAULT_TARGET_CHARSET, true, DEFAULT_BR_TEXT, DEFAULT_SPAN_TEXT);
+
+	$html = $dom->load($htmla, true, true);
+	$tmp = [];
+	foreach($html->find('select') as $ell){
+		foreach($ell->find('option') as $opt){
+			$a = $opt->plaintext;
+			$b = explode(" - ", $a);
+			$lk = $b[0];
+			unset($b[0]);
+			$jd = join(" - ", $b);
+			$c = array(
+						"judul" => $jd,
+						"is_part" => 0,
+						"link" => "https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/$lk/"
+			);
+			$data[] = $c;
+		}
+	}
+
+	$myfile = fopen("assets/data/avmanga.json", "w") or die("Unable to open file!");
+	fwrite($myfile, json_encode($data));
+	fclose($myfile);
+
+
+
+
+=============================================================================
+
+
+echo "<br>";
+
+	$data = [
+				array(
+						'title' => 'Avatar The Last Air Bender - The Promise Part 1',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/001/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - The Promise Part 2',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/002/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - The Promise Part 3',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/003/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - The Search Part 1',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/004/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - The Search Part 2',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/005/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - The Search Part 3',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/006/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - The Rift Part 1',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/007/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - The Rift Part 2',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/008/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - The Rift Part 3',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/009/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - Smoke and Shadow Part 1',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/010/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - Smoke and Shadow Part 2',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/011/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - Smoke and Shadow Part 3',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/012/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - North and South Part 1',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/013/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - North and South Part 2',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/014/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - North and South Part 3',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/015/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - Imbalance Part 1',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/024/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - Imbalance Part 2',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/025/'
+					),
+				array(
+						'title' => 'Avatar The Last Air Bender - Imbalance Part 3',
+						'link'	=> 'https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/026/'
+					),
+	];
+
+	$htmla = '<select name="chapter"><option value="003.01">003.01 - Avatar The Last Airbender - The Lost Adventures (2011)</option><option value="003.02">003.02 - Avatar The Last Airbender - Relics (2011)</option><option value="003.03">003.03 - Avatar The Last Airbender - The Art of the Animated Series (2010)</option><option value="006.01">006.01 - Avatar The Last Airbender - Rebound (2013)</option><option value="012.01">012.01 - Avatar The Last Airbender - All Ages (2015)</option><option value="016">016 - The Legend of Korra - The Art of the Animated Series Book 01 Air (2013)</option><option value="017">017 - The Legend of Korra - The Art of the Animated Series Book 02 Spirits (2014)</option><option value="018">018 - The Legend of Korra - The Art of the Animated Series Book 03 Change (2015)</option><option value="019">019 - The Legend of Korra - The Art of the Animated Series Book 04 Balance (2015)</option><option value="020">020 - The Legend of Korra - Turf Wars Part 1 (2017)</option><option value="021">021 - The Legend of Korra - Turf Wars Part 2 (2018)</option><option value="022">022 - The Legend of Korra - Turf Wars Part 3 (2018)</option><option value="023">023 - Legend of Korra (2018)</option><option value="027">027 - Avatar The Last Airbender Team Avatar Tales (2019)</option><option value="028.01">028.01 - Avatar Bee Aggressive!</option><option value="028.02">028.02 - Avatar Dont Blow It</option><option value="028.03">028.03 - Avatar Fruit Stand Freestyle</option><option value="028.04">028.04 - Avatar Game Time</option><option value="028.05">028.05 - Avatar Going Home Again</option><option value="028.06">028.06 - Avatar Gym Time</option><option value="028.07">028.07 - Avatar It\'s Only Natural</option><option value="028.08">028.08 - Avatar Lessons</option><option value="028.09">028.09 - Avatar New Recruits</option><option value="028.10">028.10 - Avatar Night Animals</option><option value="028.11">028.11 - Avatar Sleepbending</option><option value="028.12">028.12 - Avatar Sokka the Avatar</option><option value="028.13">028.13 - Avatar The Bridge</option><option value="028.14">028.14 - Avatar Water War</option><option value="029">029 - Katara and the Pirates Silver (2020)</option><option value="030">030 - Avatar The Last Airbender - Sisters (2015)</option><option value="031">031 - Avatar The Last Airbender Prequel - Zukos Story (2010)</option><option value="032">032 - Avatar The Last Airbender Shells (2014)</option><option value="032.01">032.01 - Avatar The Last Airbender Legacy</option><option value="033">033 - The Legend of Korra - Ruins of the Empire Part 01 (2019)</option><option value="034">034 - The Legend of Korra - Ruins of the Empire Part 02 (2019)</option><option value="035">035 - The Legend of Korra - Ruins of the Empire Part 03 (2020)</option><option value="036">036 - The Legend of Korra - Friends for Life (2016)</option><option value="037">037 - The Legend of Korra - Lost Pets (2018)</option><option value="038">038 - Callums Spellbook - The Dragon Prince (2020)</option><option value="039">039 - Avatar The Last Airbender The Rise of Kyoshi (2019)</option><option value="040">040 - Avatar The Last Airbender Legacy of The Fire Nation (2020)</option><option value="041">041 - Avatar The Last Airbender The Shadow of Kyoshi (2020)</option><option value="042">042 - Avatar The Last Airbender Katara and the Pirates Silver (2020)</option></select>';
+	$dom = new simple_html_dom(null, true, true, DEFAULT_TARGET_CHARSET, true, DEFAULT_BR_TEXT, DEFAULT_SPAN_TEXT);
+
+	$html = $dom->load($htmla, true, true);
+	$tmp = [];
+	foreach($html->find('select') as $ell){
+		foreach($ell->find('option') as $opt){
+			$a = $opt->plaintext;
+			$b = explode(" - ", $a);
+			$lk = $b[0];
+			unset($b[0]);
+			$jd = join(" - ", $b);
+			$c = array(
+						"title" => $jd,
+						"link" => "https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/$lk/"
+			);
+			$data[] = $c;
+		}
+	}
+
+	$myfile = fopen("assets/data/avmanga.json", "w") or die("Unable to open file!");
+	fwrite($myfile, json_encode($data));
+	fclose($myfile);

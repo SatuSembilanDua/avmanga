@@ -1,0 +1,274 @@
+@font-face {
+    font-family: opfont;
+    src: url(../fonts/herculanum.ttf);
+}
+
+body{
+	background-color: #894514;
+	background-image: url(../img/bg.jpg);
+	background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header-main{
+	background: #222;
+	margin-bottom: 20px;
+}
+
+.main-title>h1>img{
+	width: 200px;
+}
+.main-title>h1{
+	font-family: opfont;
+	font-size: 3.5em;
+	color: #FFF;
+	font-weight: 900;
+}
+
+.color-yellow{
+}
+
+.navbar-main{
+	border-radius: 0;
+}
+
+.navbar-inverse 
+.navbar-nav>.active>a, 
+.navbar-inverse 
+.navbar-nav>.active>a:focus, 
+.navbar-inverse 
+.navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #3C9CCD;
+}
+
+
+.body-main{
+	min-height: 500px;
+	width: 75%;
+}
+
+.body-main>h2{
+	border-bottom: 2px solid #3C9CCD;
+	font-family: opfont;
+
+}
+
+.table-list{
+
+}
+.table-list>tbody>tr>td, 
+.table-list>tbody>tr>th, 
+.table-list>tfoot>tr>td, 
+.table-list>tfoot>tr>th, 
+.table-list>thead>tr>td, 
+.table-list>thead>tr>th {
+    border-top: none;
+    border-bottom: 1px solid #DDD;
+}
+
+.footer{
+	background: #222222;
+	height: 150px;
+	margin-top: 50px;
+}
+
+.footer h1{
+	font-family: opfont;
+	font-size: 3.5em;
+	color: #3C9CCD;
+	border-bottom: 1px solid #FFF;
+	font-weight: 900;
+}
+.footer p{
+	color: #Fff;
+	margin: 0;
+}
+.social-btn{
+	padding: 50px;
+}
+
+.btn-social{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	text-align: center;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	padding: 4px;
+	color: #FFF;
+	font-size: 1.6em;
+}
+
+.social-btn>a:hover .btn-social{
+	color: #3C9CCD;
+	border: 2px solid #3C9CCD;
+}
+
+.link_back{
+	display: inline;
+	padding:10px;
+	border:2px solid #3D7C9D;
+	border-radius: 10px;
+	background: #3C9CCD;
+	color: #FFF; 
+}
+.link_back:hover{
+	background: #3D7C9D;
+	border:2px solid #3C9CCD;
+}
+a:hover{
+	text-decoration: none;
+}
+
+.imgholder{
+	width: 100%;
+}
+.imgholder>.img_fig>img{
+	width: 100%;
+	padding-top: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.body-main{
+		width: auto;
+	}
+ 	.footer-left{
+	 	padding-right: 5px;
+	    padding-left: 5px;
+ 	}
+ 	.footer-left>h1{
+		font-size: 3em;
+ 	}
+ 	.footer-left>p{
+ 		font-size: 0.7em;
+ 	}
+ 	.social-btn{
+ 		padding: 10% 5%;
+ 	}
+ 	.btn-social{
+ 		width: 30px;
+    	height: 30px;
+		font-size: 1em;
+ 	}
+}
+
+.dataTable>thead{
+	display: none;
+}
+
+
+.nav_bottom{
+	padding: 0;
+}
+.nav_bottom>.col-xs-4{
+	padding: 0;
+}
+.btn-nav-bottom{
+	width: 100%;
+	padding: 10px 0;
+}
+
+.btn-seb{
+	border-radius: 4px 0px 0px 4px;
+	-moz-border-radius: 4px 0px 0px 4px;
+	-webkit-border-radius: 4px 0px 0px 4px;
+}
+.btn-lis{
+	border-radius:0;
+}
+.btn-nex{
+	border-radius: 0px 4px 4px 0px;
+	-moz-border-radius: 0px 4px 4px 0px;
+	-webkit-border-radius: 0px 4px 4px 0px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+	.btn-nav-bottom{
+		font-size: 0.8em;
+	}
+}
+
+.scrollToTop {
+    padding: 10px 15px;
+    text-align: center;
+    background: #2196f3;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    box-shadow: 0 2px 7px rgba(0,0,0,.42);
+    display: none;
+    z-index: 10000;
+}
+
+.scrollToTopRel{
+	position: relative;
+    float: right;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.scrollToTop:hover, .scrollToTop:focus{
+	color:#FFF !important;
+	text-decoration: none !important;
+}
+
+.scrollToTop>i{
+	display: inline-block;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    vertical-align: top;
+    text-align: center;
+    transition: color .1s ease-in;
+}
+
+.navig{
+	padding: 5px;
+    background: #323232;
+    overflow: hidden;	
+}
+
+.navig select#slch {
+    font-family: inherit;
+    background: #222;
+    padding: 6px 10px;
+    border: none;
+    color: #ddd;
+    width: 400px;
+}
+
+body::-webkit-scrollbar {
+  	width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  	background: #f1f1f1;
+}
+ 
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  	background: #3C9CCD; 
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  	background: #555; 
+}
