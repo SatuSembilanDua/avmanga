@@ -37,7 +37,17 @@
 		$(".cb_chapter").html('<option value="">Select Comic</option>');
 		$.getJSON("assets/data/avmanga.json", function(response) {
 			$.each(response, function(index, element) {
-		        $(".cb_chapter").append('<option value="index.php?page=view&id='+index+'">'+element.title+'</option>');
+				var sel = "";
+				<?php
+					if(isset($_GET['id'])){
+						echo "sel = '$_GET[id]';";
+					}
+				?>
+				var selec = '';
+				if(sel == index){
+					selec = "selected";
+				}
+		        $(".cb_chapter").append('<option value="index.php?page=view&id='+index+'" '+selec+' >'+element.title+'</option>');
 		    });
 		});
 

@@ -190,14 +190,25 @@ function list_manga($url='')
 	$ext = pathinfo($img_src, PATHINFO_EXTENSION);
 	foreach ($select->find("option") as $opt) {
 		$id = trim(str_replace("#", "", $opt->plaintext));
-		$id = "0000$id";
-		$id = substr($id, strlen($id)-3, strlen($id));
-		$im = str_replace("001.$ext", "$id.$ext", $img_src);
+		$is = explode("-", $img_src);
+		$tmp_is = explode(".", $is[sizeof($is)-1]);
+		$tmp_id = (int)$tmp_is[0] + $id-1;
+		$id = "00000000$tmp_id";
+		$id = substr($id, strlen($id)-strlen($tmp_is[0]), strlen($id));
+		
+		$im = str_replace($tmp_is[0].".$ext", "$id.$ext", $img_src);
 		$src = "https://www.omgbeaupeep.com/comics/$im";
 		$list_img[] = $src;
 	}
 	return $list_img;
 }
+/*
+echo '<pre>';
+
+$link = "https://www.omgbeaupeep.com/comics/Avatar_The_Last_Airbender/011/";
+$a = list_manga($link);
+print_r($a);
+echo '</pre>';*/
 
 //$lst = list_manga("http://www.mangacanblog.com/baca-komik-one_piece-968.5-969.5-bahasa-indonesia-one_piece-968.5-terbaru.html");
 //$lst = list_manga("https://www.mangacanblog.com/baca-komik-one_piece-968.5-969.5-bahasa-indonesia-one_piece-968.5-terbaru.html");
